@@ -19,7 +19,7 @@ def hashing(to_be_hashed_password , hash_type):
 
 
 # chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$&-_"
-chars ="abcdefghijklmnopqrstuvwxyz"
+chars ="abcdefghijklmnopqrstuvwxyz"  #limited characters
 def generate_passwords(chars, length):
     for combo in itertools.product(chars, repeat=length):
         yield''.join(combo)
